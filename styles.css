@@ -321,19 +321,6 @@ body {
     text-decoration: underline;
 }
 
-.project-title-with-logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.project-logo-inline {
-    height: 1em;
-    width: auto;
-    object-fit: contain;
-    display: inline-block;
-}
-
 .project-role {
     color: var(--accent-color);
     font-weight: 500;
