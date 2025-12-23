@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davide Liconti - Robotics Researcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Profile Picture -->
+    <header class="header">
+        <div class="container">
+            <div class="profile-section">
+                <img src="media/profile/profile.JPG" alt="Davide Liconti" class="profile-picture" id="profilePic">
+                <div class="profile-info">
+                    <h1>Davide Liconti</h1>
+                    <p class="subtitle">PhD Candidate at Soft Robotics Lab, ETH Zurich</p>
+                    <div class="contact-info">
+                        <p>Zurich, Switzerland</p>
+                        <p><a href="mailto:dliconti@ethz.ch">dliconti@ethz.ch</a></p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/davide-liconti/" target="_blank" class="social-link">LinkedIn</a>
+                        <a href="https://github.com/davidelic" target="_blank" class="social-link">GitHub</a>
+                        <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" class="social-link">Google Scholar</a>
+                    </div>
+                    <div class="header-education-logos">
+                        <div class="header-education">
+                            <h2 class="mini-title">Education</h2>
+                            <ul>
+                                <li>2024–Current — PhD, Soft Robotics Lab, ETH Zurich</li>
+                                <li>2021–2023 — MSc Robotics, Systems and Control, ETH Zurich</li>
+                                <li>2018–2021 — BSc Mechanical Engineering, Politecnico di Torino</li>
+                            </ul>
+                        </div>
+                        <div class="header-focus-areas">
+                            <h2 class="mini-title">Focus Areas</h2>
+                            <ul>
+                                <li>Dexterous manipulation</li>
+                                <li>Imitation learning</li>
+                                <li>Vision-Language-Action models (VLAs)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Current Work -->
+    <section class="current-focus">
+        <div class="container">
+            <div class="focus-content">
+                <div class="focus-text">
+                    <p>
+                        I am a PhD Candidate at the <a href="https://srl.ethz.ch" target="_blank" rel="noopener noreferrer">Soft Robotics Lab</a>, under the supervision of <a href="https://srl.ethz.ch/the-group/prof-robert-katzschmann.html" target="_blank" rel="noopener noreferrer">Robert Katzschmann</a>, <a href="https://people.csail.mit.edu/pulkitag/" target="_blank" rel="noopener noreferrer">Pulkit Agrawal</a> and <a href="https://www.oiermees.com" target="_blank" rel="noopener noreferrer">Oier Mees</a>, working on imitation learning for dexterous manipulation, with a focus on shared representations that enable cross-embodiment policy transfer between human and robotic hands. My research spans vision–language–action training, structured manipulation representations, and large-scale model pretraining, grounded in extensive hands-on experience with real robotic systems and modern policy architectures. With a background in mechanical engineering, 3D computer vision, and robot learning, I take a holistic approach to embodied AI that bridges hardware, perception, and learning.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="publications">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="publications-grid">
+                <!-- Publication 1 -->
+                <div class="publication-card">
+                    <div class="publication-header">
+                        <h3>
+                            <a href="https://arxiv.org/pdf/2504.04259" class="publication-link" target="_blank" rel="noopener noreferrer">
+                                ORCA: An Open-Source, Reliable, Cost-Effective, Anthropomorphic Robotic Hand
+                            </a>
+                        </h3>
+                        <p class="publication-authors">
+                            Clemens C. Christoph, Maximilian Eberlein, Filippos Katsimalis, Arturo Roberti, Aristotelis Sympetheros,
+                            Michel R. Vogt, <strong>Davide Liconti</strong>, Chenyu Yang, Barnabas Gavin Cangan, Ronan J. Hinchet, Robert K. Katzschmann
+                        </p>
+                        <p class="publication-venue">Accepted at IROS 2025</p>
+                    </div>
+                    <div class="publication-media">
+                        <video src="media/publications/orca.mp4" class="publication-media-icon" controls muted loop playsinline></video>
+                    </div>
+                </div>
+
+                <!-- Publication 2 -->
+                <div class="publication-card">
+                    <div class="publication-header">
+                        <h3>
+                            <a href="https://arxiv.org/pdf/2509.13074" class="publication-link" target="_blank" rel="noopener noreferrer">
+                                Beyond Anthropomorphism: Enhancing Grasping and Eliminating a Degree of Freedom
+                            </a>
+                        </h3>
+                        <p class="publication-authors">
+                            Simon Fritsch, Liam Achenbach, Riccardo Bianco, Nicola Irmiger, Gawain Marti, Samuel Visca,
+                            Chenyu Yang, <strong>Davide Liconti</strong>, Barnabas Gavin Cangan, Robert Jomar Malate,
+                            Ronan J. Hinchet, Robert K. Katzschmann
+                        </p>
+                        <p class="publication-venue">Accepted at IROS 2025</p>
+                    </div>
+                    <div class="publication-media">
+                        <img src="media/publications/beyond.png" alt="Beyond Anthropomorphism Demo" class="publication-media-icon" onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <!-- Publication 3 -->
+                <div class="publication-card">
+                    <div class="publication-header">
+                        <h3>
+                            <a href="https://arxiv.org/pdf/2504.06084" class="publication-link" target="_blank" rel="noopener noreferrer">
+                                MAPLE: Encoding Dexterous Robotic Manipulation Priors Learned From Egocentric Videos
+                            </a>
+                        </h3>
+                        <p class="publication-authors">
+                            Alexey Gavryushin, Xi Wang, Robert J. S. Malate, Chenyu Yang, <strong>Davide Liconti</strong>,
+                            René Zurbrügg, Robert K. Katzschmann, Marc Pollefeys
+                        </p>
+                        <p class="publication-venue">Under review</p>
+                    </div>
+                    <div class="publication-media">
+                        <video src="media/publications/maple.mp4"
+                               class="publication-media-icon"
+                               controls muted loop playsinline></video>
+                    </div>
+                </div>
+
+                <!-- Publication 4 -->
+                <div class="publication-card">
+                    <div class="publication-header">
+                        <h3>
+                            <a href="https://arxiv.org/pdf/2411.03556" class="publication-link" target="_blank" rel="noopener noreferrer">
+                                VQ-ACE: Efficient Policy Search for Dexterous Robotic Manipulation via Action Chunking Embedding
+                            </a>
+                        </h3>
+                        <p class="publication-authors">
+                            Chenyu Yang, <strong>Davide Liconti</strong>, Robert K. Katzschmann
+                        </p>
+                        <p class="publication-venue">Under review</p>
+                    </div>
+                    <div class="publication-media">
+                        <img src="media/publications/vqace.png" alt="VQ-ACE Demo" class="publication-media-icon" onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <!-- Publication 5 -->
+                <div class="publication-card">
+                    <div class="publication-header">
+                        <h3>
+                            <a href="LINK_TO_SENSE_GAP_PAPER" class="publication-link" target="_blank" rel="noopener noreferrer">
+                                Sense the Gap: Predicting Contact Forces in Musculoskeletal Robotic Hands
+                            </a>
+                        </h3>
+                        <p class="publication-venue">Extended Abstract at Robosoft 2025</p>
+                    </div>
+                    <div class="publication-media">
+                        <video src="media/publications/robosoft_abstract.mp4" class="publication-media-icon" controls muted loop playsinline></video>
+                    </div>
+                </div>
+
+                <!-- Publication 6 -->
+                <div class="publication-card">
+                    <div class="publication-header">
+                        <h3>
+                            <a href="https://arxiv.org/pdf/2404.16483v1" class="publication-link" target="_blank" rel="noopener noreferrer">
+                                Leveraging Pretrained Latent Representations for Few-Shot Imitation Learning on a Dexterous Robotic Hand
+                            </a>
+                        </h3>
+                        <p class="publication-authors">
+                            <strong>Davide Liconti</strong>, Yasunori Toshimitsu, Robert K. Katzschmann
+                        </p>
+                        <p class="publication-venue">Accepted at Humanoids 2024</p>
+                    </div>
+                    <div class="publication-media">
+                        <img src="media/publications/leveraging.png" alt="Few-Shot Imitation Learning Demo" class="publication-media-icon" onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <!-- Publication 7 -->
+                <div class="publication-card">
+                    <div class="publication-header">
+                        <h3>
+                            <a href="https://www.research-collection.ethz.ch/entities/publication/d2fd9300-eb4f-4d18-b670-a65847007f90" class="publication-link" target="_blank" rel="noopener noreferrer">
+                                Preliminary Design of Actuators for Walking Robot on the Moon
+                            </a>
+                        </h3>
+                        <p class="publication-authors">
+                            Giorgio Valsecchi, <strong>Davide Liconti</strong>, Fabian Tischhauser
+                        </p>
+                        <p class="publication-venue">Accepted at ASTRA 2022</p>
+                    </div>
+                    <div class="publication-media">
+                        <img src="media/publications/moon.png" alt="Moon Robot Demo" class="publication-media-icon" onclick="openModal(this)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects and Activities -->
+    <section class="projects-activities">
+        <div class="container">
+            <h2 class="section-title">Projects and Activities</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>
+                        <a href="https://rwr.ethz.ch" class="project-link" target="_blank" rel="noopener noreferrer">
+                            Real World Robotics (RWR) Class
+                        </a>
+                    </h3>
+                    <p class="project-role">Lead Teaching Assistant</p>
+                    <p>Teaching theoretical lectures, workshops and assignments for the Real World Robotics class at ETH Zurich.</p>
+                    <div class="project-media">
+                        <video src="media/projects/rwr_task1_2.mp4"
+                               class="project-image"
+                               controls
+                               muted
+                               loop
+                               playsinline></video>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>
+                        <a href="https://wbcdcompetition.github.io" class="project-link" target="_blank" rel="noopener noreferrer">
+                            ICRA 2025 WBCD Challenge
+                        </a>
+                    </h3>
+                    <p class="project-role">Team Lead</p>
+                    <p>Leading the team for the ICRA 2025 Whole-Body Control and Dexterous Manipulation Challenge.</p>
+                    <div class="project-media">
+                        <video src="media/projects/wbcd.MOV"
+                               class="project-image"
+                               controls
+                               muted
+                               loop
+                               playsinline></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <!-- (Education details moved into header overview) -->
+
+    <!-- Work Experience -->
+    <section class="work-experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">Dec 2023 – Apr 2024</div>
+                    <div class="timeline-content">
+                        <img src="media/logos/srl.png" alt="Soft Robotics Lab Logo" class="timeline-logo">
+                        <h3>Research Assistant, Soft Robotics Lab, ETH Zurich</h3>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">Sept 2022 – Mar 2023</div>
+                    <div class="timeline-content">
+                        <img src="media/logos/astrivis_logo.jpeg" alt="Astrivis Logo" class="timeline-logo">
+                        <h3>Computer Vision Research Intern, Astrivis, Zurich</h3>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">Feb 2023 – Jun 2023</div>
+                    <div class="timeline-content">
+                        <img src="media/logos/eth.png" alt="ETH Zurich Logo" class="timeline-logo">
+                        <h3>Teaching Assistant, ETH Zurich</h3>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">Mar 2021 – May 2021</div>
+                    <div class="timeline-content">
+                        <img src="media/logos/podium.jpg" alt="Podium Advanced Technologies Logo" class="timeline-logo">
+                        <h3>Engineering Intern, Podium Advanced Technologies, Italy</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section removed -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Davide Liconti. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for full-size images -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
