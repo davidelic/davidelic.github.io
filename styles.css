@@ -321,6 +321,18 @@ body {
     text-decoration: underline;
 }
 
+.project-title-with-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-logo-inline {
+    height: 24px;
+    width: auto;
+    object-fit: contain;
+}
+
 .project-role {
     color: var(--accent-color);
     font-weight: 500;
@@ -333,6 +345,13 @@ body {
     object-fit: cover;
     border-radius: 8px;
     margin-top: 1rem;
+}
+
+.project-logo {
+    height: 28px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
 }
 
 /* Timeline (Education & Work) */
