@@ -124,22 +124,104 @@ body {
 
 .education-focus-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.education-focus-item ul {
-    list-style: none;
-    padding-left: 0;
-    font-size: 0.95rem;
-    color: var(--text-dark);
+.education-focus-column {
+    display: flex;
+    flex-direction: column;
 }
 
-.education-focus-item li {
-    margin-bottom: 0.5rem;
-    line-height: 1.6;
+.mini-section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--accent-red-dark);
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.mini-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    border-radius: 2px;
+}
+
+/* Compact Timeline for Education */
+.timeline-compact {
+    padding-left: 0;
+}
+
+.timeline-compact::before {
+    left: 25px;
+    width: 3px;
+    transform: translateX(-50%);
+}
+
+.timeline-compact .timeline-item {
+    margin-bottom: 2rem;
+    padding-left: 0;
+}
+
+.timeline-compact .timeline-logo {
+    height: 50px;
+    width: 50px;
+    border: 3px solid var(--border-color);
+    padding: 8px;
+}
+
+.timeline-compact .timeline-logo-wrapper {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.timeline-compact .timeline-content-wrapper h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.timeline-compact .timeline-year {
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Focus Areas Grid */
+.focus-areas-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.focus-area-item {
+    background: white;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.focus-area-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    border-color: var(--primary-color);
+}
+
+.focus-area-item h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 0;
 }
 
 .header-logos {
@@ -193,6 +275,14 @@ body {
 
 .focus-text p {
     color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.bio-text-inline {
+    color: var(--text-dark);
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
 }
 
 /* Publications */
@@ -364,8 +454,8 @@ body {
 /* Timeline (Education & Work) */
 .education,
 .work-experience {
-    padding: 3rem 0;
-    margin-bottom: 3rem;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
 }
 
 .timeline {
@@ -386,11 +476,15 @@ body {
 
 .timeline-item {
     position: relative;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     padding-left: 0;
     display: flex;
     gap: 1.5rem;
     align-items: flex-start;
+}
+
+.work-experience .timeline-item {
+    margin-bottom: 2.5rem;
 }
 
 .timeline-logo-wrapper {
@@ -424,10 +518,14 @@ body {
 }
 
 .timeline-content-wrapper h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
     color: var(--text-dark);
+}
+
+.work-experience .timeline-content-wrapper h3 {
+    font-size: 1.15rem;
 }
 
 .timeline-content {
@@ -560,38 +658,6 @@ body {
     margin: 0;
 }
 
-/* Bio Section */
-.bio-section {
-    padding: 3rem 0;
-    margin-bottom: 3rem;
-}
-
-.bio-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: var(--accent-red-dark);
-    position: relative;
-    padding-bottom: 0.5rem;
-}
-
-.bio-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60px;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-    border-radius: 2px;
-}
-
-.bio-text {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: var(--text-dark);
-    max-width: 800px;
-}
 
 /* Footer */
 .footer {
@@ -677,7 +743,11 @@ body {
 
     .education-focus-grid {
         grid-template-columns: 1fr;
-        text-align: left;
+        gap: 2rem;
+    }
+
+    .focus-areas-grid {
+        grid-template-columns: 1fr;
     }
 
     .header-logos {
